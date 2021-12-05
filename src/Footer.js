@@ -5,7 +5,7 @@ export default function Footer() {
 
       <h4 class="sorce-link">
         <a
-          href="https://github.com/kimiouch/WeatherAppW8final"
+          href="https://github.com/kimiouch/my-app"
           class="thesrcLinks"
         >
           open source code
