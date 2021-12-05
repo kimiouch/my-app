@@ -21,7 +21,7 @@ export default function Searched() {
             <div class="temratures">
               <em>
                 <span id="temp">...</span>
-                <a id="celsius">°C🌡</a>
+                <span id="celsius" >°C🌡</span>
                 <br />
                 Humidity: <span id="humid">...</span> %💧
                 <br />
