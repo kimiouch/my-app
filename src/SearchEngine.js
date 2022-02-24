@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export default function SearchEngine() {
   return (
     <div class="searchengine">
