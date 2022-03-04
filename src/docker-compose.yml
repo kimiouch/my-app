@@ -1,0 +1,7 @@
+version: "2"
+services:
+  weather:
+    image: "node:14"
+    expose:
+      - "3001"
+    command: "npm build && npm start"
