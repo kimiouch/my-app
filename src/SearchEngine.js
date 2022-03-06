@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 
+
 export default function SearchEngine(props) { 
 const [weatherData, setWeatherData] = useState({ready: false});
 const [city, setCity] = useState(props.defualtcity)
@@ -15,13 +16,14 @@ function handleResponse(response) {
   temp: response.data.main.temp,
   humidity: response.data.main.humidity,
   wind: response.data.wind.speed,
+  icon: response.data.weather[0].icon,
   });
  
 }
 
 function search(){
   const apiKey = "c403a9e2a5c07086f36f15c109e2369a";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
   axios.get(apiUrl).then(handleResponse);
 }
 

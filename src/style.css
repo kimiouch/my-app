@@ -74,7 +74,7 @@ form {
 }
 
 #temp {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .temratures {
@@ -85,6 +85,11 @@ div.col {
   margin-top: -10px;
   margin-bottom: -20px;
 }
+
+.main-icon {
+ width: 120px;
+}
+
 .rainbow {
   margin-right: 20px;
 }
