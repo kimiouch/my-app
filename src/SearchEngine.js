@@ -40,18 +40,18 @@ function handleCityChange(event){
 if (weatherData.ready){
 
 return (
-    <div class="searchengine">
+    <div className="searchengine">
       <form onSubmit={handleSubmit}>
-        <img src="./icons/global-warming.png" width="90px" class="search-img" />
+        <img src="./icons/global-warming.png" width="90px" className="search-img" />
         <input
           type="search"
           placeholder="search a city or country"
-          class="type"
+          className="type"
           onChange={handleCityChange}
         />
-        <button class="search">🔍</button>
+        <button className="search">🔍</button>
 
-        <button class="current" id="current">
+        <button className="current" id="current">
           current
         </button>
       </form>

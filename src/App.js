@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
      
-       <div class="body">
+       <div className="body">
         <Header />
         <SearchEngine defualtcity="New York"/>
         <NextDays />

@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <div class="header">
-      <h1 class="title">
+    <div className="header">
+      <h1 className="title">
         know the <strong> WEATHER </strong> with kim
       </h1>
 

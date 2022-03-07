@@ -5,11 +5,11 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props){
     return(
-        <div class="WeatherInfo">
- <div class="container searched">
-        <div class="row">
-          <div class="col" id="em">
-            <h3 class="column-1">
+        <div className="WeatherInfo">
+ <div className="container searched">
+        <div className="row">
+          <div className="col" id="em">
+            <h3 className="column-1">
               <span id="city">{props.data.city}</span>
 
               <br />
@@ -22,8 +22,8 @@ export default function WeatherInfo(props){
             </h3>
           </div>
 
-          <div class="col">
-            <div class="temratures">
+          <div className="col">
+            <div className="temratures">
               <em>
                 <span id="temp"><WeatherTemp celsius={props.data.temp}/></span>
                 <span id="celsius" ></span>
@@ -35,7 +35,7 @@ export default function WeatherInfo(props){
               </em>
             </div>
           </div>
-          <div class="col">
+          <div className="col">
            <WeatherIcon img={props.data.icon} />
           </div>
         </div>
