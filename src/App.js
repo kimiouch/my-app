@@ -7,8 +7,6 @@ import './style.css';
 
 import Header from "./Header";
 import SearchEngine from "./SearchEngine";
-import NextDays from "./NextDays";
-import Forecast from "./Forecast";
 import Footer from "./Footer";
 
 function App() {
@@ -18,11 +16,9 @@ function App() {
        <div className="body">
         <Header />
         <SearchEngine defualtcity="New York"/>
-        <NextDays />
-        <Forecast />
         <Footer />
       </div>
-         </div>
+     </div>
   );
 }
 

@@ -27,7 +27,7 @@ const icons = {
 }
 
     return(
-    <img src={icons[props.img]} className="main-icon"/>
+    <img src={icons[props.img]} className="main-icon" alt="" />
 
     );
 }

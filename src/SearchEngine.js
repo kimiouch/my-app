@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast"
 
 
 export default function SearchEngine(props) { 
@@ -10,6 +11,7 @@ const [city, setCity] = useState(props.defualtcity)
 function handleResponse(response) {
   setWeatherData ({
   ready: true,
+  coordinates: response.data.coord,
   city: response.data.name,
   time: new Date(response.data.dt * 1000),
   description: response.data.weather[0].description,
@@ -42,7 +44,7 @@ if (weatherData.ready){
 return (
     <div className="searchengine">
       <form onSubmit={handleSubmit}>
-        <img src="./icons/global-warming.png" width="90px" className="search-img" />
+        <img src="./icons/global-warming.png" width="90px" className="search-img" alt="" />
         <input
           type="search"
           placeholder="search a city or country"
@@ -55,7 +57,10 @@ return (
           current
         </button>
       </form>
-     <WeatherInfo data={weatherData}/>
+     
+    <WeatherInfo data={weatherData}/>
+    <Forecast  coordinates={weatherData.coordinates} />
+
     </div>
   );
 } else {
