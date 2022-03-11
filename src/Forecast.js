@@ -20,7 +20,6 @@ export default function Forecast(props) {
     return (
        <div className="Forecast">
         <h1 className="nexts">
-        <img src="./icons/triangle.png" width="30px" alt="" />
         NEXT DAYS
       </h1>
 
