@@ -1,7 +1,6 @@
 export default function Footer() {
   return (
     <div className="Footer">
-      <hr className="buttom" />
 
       <h4 className="sorce-link">
         <a

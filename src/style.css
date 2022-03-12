@@ -12,23 +12,16 @@ body {
 .title {
   text-align: center;
   font-size: 17px;
-  padding: 20px 0 5px 0;
   color: #333333;
-}
-
-strong {
-  text-decoration: underline;
-  color: #596aca;
 }
 
 hr {
   border: 1px solid #000000;
-  margin: 5px 30px;
 }
 
 form {
   font-size: 20px;
-  margin: auto 50px;
+  margin:20px 50px auto 50px;
 }
 .type {
   margin-left: 15px;
@@ -54,45 +47,39 @@ form {
   border-color: #78b75b;
 }
 
-.searched {
-  margin-top: 20px;
+.WeatherInfo {
+    margin: -10px 30px -35px 30px ;
 }
 
 .column-1 {
-  margin-left: 40px;
+   margin-top: 15px;
 }
+
 #city {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+ 
 }
 
 #time {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #des {
-  font-size: 15px;
+  font-size: 20px;
+
 }
 
-#temp {
-  text-decoration: none;
-}
-
-.temratures {
-  margin: 10px;
-}
-
-div.col {
-  margin-top: -10px;
-  margin-bottom: -20px;
+.temperature {
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 .main-icon {
- width: 120px;
+ width: 130px;
 }
 
-.rainbow {
-  margin-right: 20px;
-}
+
 
 .nexts {
   text-align: center;
@@ -101,21 +88,8 @@ div.col {
   font-size: 20px;
 }
 
-.frame {
-  border: 2px solid #596aca;
-  border-radius: 10px;
-  max-width: 650px;
-  margin: 5px auto;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(253, 239, 132) 0%,
-    rgb(247, 198, 169) 45.2%,
-    rgb(21, 186, 196) 100.3%
-  );
-}
-
 #forecast .row {
-  padding: 5px 10px;
+  margin: 20px;
 }
 
 .container {
@@ -124,14 +98,15 @@ div.col {
 
 .forecast-icon {
   text-align: center;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .forecast-date {
   text-align: center;
   font-weight: bold;
   padding-bottom: 10px;
+  opacity: 0.7;
 }
 
 .forecast-temp {
@@ -140,14 +115,14 @@ div.col {
   padding-top: 10px;
 }
 
-.buttom {
-  margin-top: 30px;
+.forecast-temp-min {
+   opacity: 0.7;
 }
 
 .sorce-link {
   font-size: medium;
   text-align: center;
-  padding: 10px 5px;
+  margin-bottom: 20px;
 }
 
 .thesrcLinks {
