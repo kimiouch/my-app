@@ -32,20 +32,13 @@ form {
 }
 .search {
   margin: auto 15px;
-  font-size: 25px;
-  padding: 5px 7px;
-  border-radius: 20%;
-  background-color: #f7c8a8;
-  border-color: #ffa217;
-}
-
-.current {
   font-size: 20px;
-  padding: 9px 7px;
+  padding: 5px 7px;
   border-radius: 20%;
   background-color: #a2e881;
   border-color: #78b75b;
 }
+
 
 .WeatherInfo {
     margin: -10px 30px -35px 30px ;

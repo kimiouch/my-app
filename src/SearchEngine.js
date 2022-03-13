@@ -51,12 +51,9 @@ return (
           className="type"
           onChange={handleCityChange}
         />
-        <button className="search">🔍</button>
+        <button className="search">Search🔍</button>
 
-        <button className="current" id="current">
-          current
-        </button>
-      </form>
+       </form>
      
     <WeatherInfo data={weatherData}/>
     <Forecast  coordinates={weatherData.coordinates} />
